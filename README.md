@@ -1,5 +1,17 @@
 # API Testing
 
+### Table of Content
+- [API Testing](#api-testing)
+    - [Table of Content](#table-of-content)
+  - [Usage](#usage)
+    - [Setup the database](#setup-the-database)
+    - [Run the server](#run-the-server)
+    - [Setup testing database](#setup-testing-database)
+    - [Run the tests \& display test coverage](#run-the-tests--display-test-coverage)
+  - [Building a backend](#building-a-backend)
+    - [API testing](#api-testing-1)
+    - [Testing coverage](#testing-coverage)
+
 ## Usage
 
 - Run `git clone <repo-link>`
@@ -34,7 +46,7 @@
 
 ## Building a backend
 
-#### The MVC framework is used to structure an application by  separating the application code into 3 components:
+** The MVC framework is used to structure an application by  separating the application code into 3 components:**
 
     - __Model__ manages the application's data including the database interactions. So it handles the data that is transferred between the view and controller
     - __View__ is the user interface(UI) that the user of the application interacts with and it only linked to the controller. As it displays data provided by the controller as a result presented to the user.
@@ -44,22 +56,14 @@
 
 - Model code 
 
-
-
 - View Code
 
-
 - Controller code
-
-
-
-
-
 
 ### API testing
 This involves unit testing and integration testing through mocking. API mocking allows for the stimulation of the API responses and test the features without actually sending request to the external API. This is really useful for testers and developers as they don't have to rely on the availability, performance and not compromise the security conditions of the API service.
 
-#### The unit testing is of the controller and the models of the server which are tested separately is to ensure they are behaving as they are meant to and it also allows early detection of bugs. 
+** The unit testing is of the controller and the models of the server which are tested separately is to ensure they are behaving as they are meant to and it also allows early detection of bugs. **
 
 - Controllers tests 
     - The models and controllers javascript are imported
@@ -200,7 +204,7 @@ This involves unit testing and integration testing through mocking. API mocking 
      ```
 
 
-#### Integration testing verifies that the interaction between the each components of the backend are communicating and functioning correctly and as expected. It is usually prepared and performed after unit testing have been completed. 
+** Integration testing verifies that the interaction between the each components of the backend are communicating and functioning correctly and as expected. It is usually prepared and performed after unit testing have been completed. **
 To begin integration testing a [test server](__tests__\integration\config.js) and a [test database](__tests__\integration\reset.sql) is set up. 
 - In this case the API endpoints are being tested. 
 An example of how these tests is:
@@ -225,9 +229,16 @@ An example of how these tests is:
     })
 ```
 
+### Testing coverage
 
+File                          | % Stmts | % Branch | % Funcs | % Lines | 
+------------------------------|---------|----------|---------|---------|
+All files                     |   95.19 |       75 |   93.33 |   96.07 |                   
+                 
 
-
-
+- 95.19% Statements: Percentage of individual code statements executed by tests.
+- 75% Branches: Percentage of decision (such as if/else and try/catch statements) paths that are tested
+- 93.33% Functions: Percentage of function that are called during a test.
+- 96.07% Lines: Percentage of executable lines reached by tests.
     
     
