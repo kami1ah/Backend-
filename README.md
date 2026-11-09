@@ -47,10 +47,10 @@
 ## Building a backend
 
 ** The MVC framework is used to structure an application by  separating the application code into 3 components:**
-
     - __Model__ manages the application's data including the database interactions. So it handles the data that is transferred between the view and controller
     - __View__ is the user interface(UI) that the user of the application interacts with and it only linked to the controller. As it displays data provided by the controller as a result presented to the user.
     - __Controller__ is the intermediary between the views and model components. It receives and processes the incoming request from the user into the model and then renders the output/result to the UI.
+
 
 ![MVC architectural framework](/assets/images/MVC_image.jpg "MVC framework")
 
